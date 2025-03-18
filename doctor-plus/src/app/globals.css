@@ -55,6 +55,10 @@ optgroup {
   font: inherit;
 }
 
+p {
+  color : var(--color-gray-80)
+}
+
 ul {
   list-style: none;
 }
@@ -67,8 +71,20 @@ a {
 body {
   background-color: var(--color-default-background);
   color: var(--color-default-forground);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
 
   > * {
     padding-inline: var(--full-width-padding-inline);
+  }
+  .tagLine {
+    background-color: var(--color-gray-16);
+
+    padding-block: 1rem;
+
+    text-align: center;
   }
 }
