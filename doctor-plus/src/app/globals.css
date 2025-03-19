@@ -56,7 +56,7 @@ optgroup {
 }
 
 p {
-  color : var(--color-gray-80)
+  color: var(--color-gray-80);
 }
 
 ul {
@@ -73,6 +73,7 @@ body {
   color: var(--color-default-forground);
   display: grid;
   grid-template-rows: auto 1fr auto;
+  font-size: var(--fz-400);
 
   min-block-size: 100vh;
   min-block-size: 100dvh;
