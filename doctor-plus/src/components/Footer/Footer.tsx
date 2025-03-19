@@ -17,7 +17,10 @@ const Footer: React.FC = () => {
     <footer className={styles.footer}>
       <div className={styles.writings}>
         <div className={styles.logo}>دکتر پلاس</div>
-        <p className={styles.description}>دریافت نوبت از متخصصان کشور</p>
+        <p className={styles.description}>
+          تجربه مشاوره آنلاین و دریافت نوبت از بهترین پزشکان و بیمارستان‌های
+          ایران
+        </p>
       </div>
       <div className={styles.visuals}>
         <ul className={styles.certificates}>

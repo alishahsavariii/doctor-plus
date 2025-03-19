@@ -10,7 +10,7 @@ const vazirmatn = Vazirmatn({
 });
 export const metadata: Metadata = {
   title: "دکتر پلاس",
-  description: "سامانه جستجو آنلاین دکتر و رزرو آنلاین",
+  description: "سامانه جستجو آنلاین دکتر و رزرو نوبت",
 };
 export default function RootLayout({
   children,
