@@ -1,3 +1,5 @@
+"use client"
+
 import { DoctorModel } from "@/models/doctor.models";
 import {
   createContext,

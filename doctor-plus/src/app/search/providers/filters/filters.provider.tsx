@@ -1,3 +1,5 @@
+"use client"
+
 import { FilterTypes } from "@/types/filter.types";
 import {
   createContext,
