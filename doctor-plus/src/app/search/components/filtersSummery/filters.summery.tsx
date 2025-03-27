@@ -1,3 +1,5 @@
+"use client"
+
 import { ReactElement, useContext, useMemo } from "react";
 import { FilterContext } from "../../providers/filters/filters.provider";
 import { FilterTypes } from "@/types/filter.types";

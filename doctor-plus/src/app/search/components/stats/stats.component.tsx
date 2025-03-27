@@ -1,3 +1,5 @@
+"use client"
+
 import { ReactElement } from "react";
 import { useContext } from "react";
 import { DoctorsContext } from "../../providers/doctors/doctors.provider";

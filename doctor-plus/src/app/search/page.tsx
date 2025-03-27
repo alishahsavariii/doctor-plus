@@ -16,12 +16,10 @@ import ResultsComponent from "./components/result/results.component";
 
 type SearchParams = { [key: string]: string | string[] | undefined };
 
-type Props = { searchParams: Promise<SearchParams> };
+type Props = { searchParams: SearchParams };
 
-export default async function page({
-  searchParams,
-}: Props): Promise<ReactElement> {
-  const defaultFilters = generateDefaultFilters(await searchParams);
+export default function page({ searchParams }: Props): ReactElement {
+  const defaultFilters = generateDefaultFilters(searchParams);
   return (
     <FiltersProvider defaultFilters={defaultFilters}>
       <DoctorsProvider doctors={doctors}>
