@@ -2,7 +2,7 @@ import { DoctorModel } from "@/models/doctor.models";
 
 export const doctors: DoctorModel[] = [
   {
-    id: "99fe4dcb-6560-4914-ba91-3a36a9a2a632",
+    id: "99fe4dcb",
     name: "مریم آذری فر",
     image:
       "/getImage/p24/search-men/1e60f0fdfc144f7f50ca3600b558dceb.jpg?size=150",
@@ -18,7 +18,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24", "کمترین معطلی"],
   },
   {
-    id: "9b155baf-0e63-4bf1-8128-cd4a5c5e0ce0",
+    id: "9b155baf",
     name: "زهرا فریدونی",
     image:
       "/getImage/p24/search-men/8edab19c33022a00f61e9d480b03c142.jpg?size=150",
@@ -35,7 +35,7 @@ export const doctors: DoctorModel[] = [
     badges: ["کمترین معطلی"],
   },
   {
-    id: "6eb7cbfd-739b-4684-abec-162daf191f42",
+    id: "6eb7cbfd",
     name: "محسن چراغی",
     image:
       "/getImage/p24/search-men/321d41b0fd6ace7b871e42678a830581.jpg?size=150",
@@ -52,7 +52,7 @@ export const doctors: DoctorModel[] = [
     badges: ["کمترین معطلی"],
   },
   {
-    id: "9742201d-5b81-4af3-9304-72a8a5dbf2fd",
+    id: "9742201d",
     name: "ندا جهانفکر",
     image:
       "/getImage/p24/search-men/7a44c7dcd3315d60eaba89a6598007a2.jpeg?size=150",
@@ -69,7 +69,7 @@ export const doctors: DoctorModel[] = [
     badges: [],
   },
   {
-    id: "77b2d509-9eee-11ea-9877-005056b09c11",
+    id: "77b2d509",
     name: "فریده روستافر",
     image:
       "/getImage/p24/search-men/4b91c8fb6dbce21a579e4fa1c9b1df79.png?size=150",
@@ -85,7 +85,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24", "کمترین معطلی"],
   },
   {
-    id: "9742dc24-1cee-47e4-bf1a-747fa155f880",
+    id: "9742dc24",
     name: "نفیسه آقابابائی",
     image:
       "/getImage/p24/search-men/c6834efa919449a5e9cb98aa7180be61.jpg?size=150",
@@ -102,7 +102,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24", "خوش برخورد", "کمترین معطلی"],
   },
   {
-    id: "f18a4d53-5273-4143-b020-8bdda4cb3838",
+    id: "f18a4d53",
     name: "عاطفه رحمتی",
     image:
       "/getImage/p24/search-men/9c0fcbd236dc7e9347e2ec70468dc853.jpeg?size=150",
@@ -120,7 +120,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24", "خوش برخورد", "کمترین معطلی"],
   },
   {
-    id: "b0f3d70f-6e20-4513-ba87-c47420ca7ca2",
+    id: "b0f3d70f",
     name: "بتول صفری",
     image:
       "/getImage/p24/search-women/b75328c5d4062c8ae32777547bc4b201.jpg?size=150",
@@ -137,7 +137,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24", "کمترین معطلی"],
   },
   {
-    id: "9743a59f-bd8b-4ab2-8264-5a9ff3a12dc4",
+    id: "9743a59f",
     name: "زهره موسی پور",
     image:
       "/getImage/p24/search-men/a53de7572249e0883af4eebc5d1ec165.jpg?size=150",
@@ -153,7 +153,7 @@ export const doctors: DoctorModel[] = [
     badges: [],
   },
   {
-    id: "868e3a74-09a8-46c6-80d0-70b4e98906a2",
+    id: "868e3a74",
     name: "بهار افروزي",
     image:
       "/getImage/p24/search-men/c5ed8425d0049f77ad074a7941dc2b58.jpeg?size=150",
@@ -170,7 +170,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24", "خوش برخورد", "کمترین معطلی"],
   },
   {
-    id: "7f745cd0-0454-429e-8508-d2041a70d17f",
+    id: "7f745cd0",
     name: "فاطمه مصطفوی نژاد",
     image:
       "/getImage/p24/search-men/2156f7d5a6f5cccde3bc95d4cf2227c2.jpg?size=150",
@@ -186,7 +186,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24"],
   },
   {
-    id: "de072256-841d-4239-9bef-d6c80f4848de",
+    id: "de072256",
     name: "سیما عباسی",
     image:
       "/getImage/p24/search-men/07b6fa5cf21b6b60872d15b80f90179e.jpeg?size=150",
@@ -202,7 +202,7 @@ export const doctors: DoctorModel[] = [
     badges: ["کمترین معطلی"],
   },
   {
-    id: "54031d06-a107-11ea-8711-005056b09c11",
+    id: "54031d06",
     name: "سمانه حبیبی",
     image:
       "/getImage/p24/search-men/2188dd56a517029dae732476baee1dcc.jpg?size=150",
@@ -218,7 +218,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24", "کمترین معطلی"],
   },
   {
-    id: "33b47ea6-81a8-4fcc-96b2-334fe53546f1",
+    id: "33b47ea6",
     name: "مریم وانانی",
     image:
       "/getImage/p24/search-women/62618083bc8470878dab5aaa6effc271.jpeg?size=150",
@@ -234,7 +234,7 @@ export const doctors: DoctorModel[] = [
     badges: ["کمترین معطلی"],
   },
   {
-    id: "ae94cc9c-0695-4e39-9d3d-c6ebe675be68",
+    id: "ae94cc9c",
     name: "زینب سادات هاشمی نژاد",
     image:
       "/getImage/p24/search-men/8f420851668ffb79eac966370c5442ff.jpeg?size=150",
@@ -250,7 +250,7 @@ export const doctors: DoctorModel[] = [
     badges: [],
   },
   {
-    id: "9b1d14ea-2241-4138-b8cc-8ee4f4a05bfd",
+    id: "9b1d14ea",
     name: "زهرا حیدری سورشجانی",
     image:
       "/getImage/p24/search-women/750a6bce37993acbf542b3deea04a82b.jpg?size=150",
@@ -266,7 +266,7 @@ export const doctors: DoctorModel[] = [
     badges: ["کمترین معطلی"],
   },
   {
-    id: "9a8be52d-0308-4474-aad6-07349a408693",
+    id: "9a8be52d",
     name: "محمد عابدپور",
     image:
       "/getImage/p24/search-men/9f544b04434013559b79aaabaf4a41e3.jpg?size=150",
@@ -283,7 +283,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24"],
   },
   {
-    id: "647d8eda-b420-49d3-83ec-ccfcf1d2387a",
+    id: "647d8eda",
     name: "علی کامرانی",
     image:
       "/getImage/p24/search-men/e74fd54cffbe4a386b5e4423ae91deef.png?size=150",
@@ -300,7 +300,7 @@ export const doctors: DoctorModel[] = [
     badges: [],
   },
   {
-    id: "d5b65ca6-0abb-11ef-9b16-005056add853",
+    id: "d5b65ca6",
     name: "نرگس کوهستانی",
     image:
       "/getImage/p24/search-men/3d0c42f367445a5377ad54bd3044795a.jpg?size=150",
@@ -317,7 +317,7 @@ export const doctors: DoctorModel[] = [
     badges: [],
   },
   {
-    id: "9dd501a0-b618-4f50-8791-624e77843fc7",
+    id: "9dd501a0",
     name: "عصمت شریف",
     image:
       "/getImage/p24/search-men/fffe9a06ddfd425decdd180f826d7ae5.jpg?size=150",
@@ -334,7 +334,7 @@ export const doctors: DoctorModel[] = [
   },
 
   {
-    id: "97896957-2e60-4377-ba9d-bdadd2e6b3e8",
+    id: "97896957",
     name: "سیده مهسا میرزنده دل",
     image:
       "/getImage/p24/search-men/aab9b3662a5f1cba554dd94958f8b5e5.jpeg?size=150",
@@ -351,7 +351,7 @@ export const doctors: DoctorModel[] = [
     badges: ["کمترین معطلی"],
   },
   {
-    id: "04ee8064-9da5-48c1-bf44-4e48fd9eca40",
+    id: "04ee8064",
     name: "روح الله کاویان",
     image:
       "/getImage/p24/search-men/a4b7e4b066f0ef2494e17d764e24f75d.jpg?size=150",
@@ -368,7 +368,7 @@ export const doctors: DoctorModel[] = [
     badges: ["کمترین معطلی"],
   },
   {
-    id: "bf153771-1f3d-468d-81fb-0bb96f396eb4",
+    id: "bf153771",
     name: "نیما نیک افشار",
     image:
       "/getImage/p24/search-men/e75a2c19b753fd8e9db56e15262128d4.jpg?size=150",
@@ -385,7 +385,7 @@ export const doctors: DoctorModel[] = [
     badges: ["کمترین معطلی"],
   },
   {
-    id: "bcb417e7-7c45-43b8-a091-a19c0c890d5e",
+    id: "bcb417e7",
     name: "محدثه گرجي",
     image:
       "/getImage/p24/search-men/3219e017366ad511d87fc362a637f829.jpg?size=150",
@@ -402,7 +402,7 @@ export const doctors: DoctorModel[] = [
     badges: [],
   },
   {
-    id: "04c4ae79-8e8c-4366-a40a-864ed00563e7",
+    id: "04c4ae79",
     name: "ژاله ابراهيمي قهنويه",
     image:
       "/getImage/p24/search-men/c55859bd6be16d843b437592f777a1eb.jpg?size=150",
@@ -418,7 +418,7 @@ export const doctors: DoctorModel[] = [
     badges: [],
   },
   {
-    id: "4db016af-9a04-4b21-8e3d-cf4ba4f8291b",
+    id: "4db016af",
     name: "مازیار بذرافشان قاسم آبادی",
     image:
       "/getImage/p24/search-men/d0688b3257a7e785b93a87d664e20b97.jpg?size=150",
@@ -435,7 +435,7 @@ export const doctors: DoctorModel[] = [
     badges: [],
   },
   {
-    id: "68d67f63-965e-41b5-a943-77d281fec243",
+    id: "68d67f63",
     name: "حمیدرضا رحیمی",
     image:
       "/getImage/p24/search-men/33ce4bcd8ecc7462a4e3779908367ce8.jpg?size=150",
@@ -451,7 +451,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24", "خوش برخورد", "کمترین معطلی"],
   },
   {
-    id: "9cd0397e-d4c5-4026-8060-c056c0b4667a",
+    id: "9cd0397e",
     name: "مریم احدی",
     image:
       "/getImage/p24/search-men/4301fbad2273318f23921ad97004c202.jpg?size=150",
@@ -467,7 +467,7 @@ export const doctors: DoctorModel[] = [
     badges: ["خوش برخورد"],
   },
   {
-    id: "b9f70780-5051-43c4-8ed2-32d2306dc44d",
+    id: "b9f70780",
     name: "عفت زادسر",
     image:
       "/getImage/p24/search-women/b0d2e16b7ac88c4bf9de3d95afdb00dc.jpg?size=150",
@@ -484,7 +484,7 @@ export const doctors: DoctorModel[] = [
     badges: [],
   },
   {
-    id: "2558e849-6f6e-486e-9327-cde74559c2db",
+    id: "2558e849",
     name: "کیوان نیک سرشت",
     image:
       "/getImage/p24/search-men/dac13f2966d54ca2f7ede2d8f7ad304b.jpg?size=150",
@@ -501,7 +501,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24"],
   },
   {
-    id: "998cbed4-a338-4295-b596-beb37fdd5716",
+    id: "998cbed4",
     name: "فرشته طاهر",
     image:
       "/getImage/p24/search-men/d99336c3c3b209d8b725a69cf888187f.jpg?size=150",
@@ -517,7 +517,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24", "کمترین معطلی"],
   },
   {
-    id: "97421edd-efb5-4e53-8257-53116258d8f9",
+    id: "97421edd",
     name: "اشکان یزدان پناه حمیدآباد",
     image:
       "/getImage/p24/search-men/ae5091c8cb4ad6c2b8f973bf800a4794.jpg?size=150",
@@ -533,7 +533,7 @@ export const doctors: DoctorModel[] = [
     badges: ["کمترین معطلی"],
   },
   {
-    id: "9beff20c-93bc-4117-a143-0e52d18869a9",
+    id: "9beff20c",
     name: "دینا قلی پور",
     image:
       "/getImage/p24/search-women/3862028ca9d9c915d5b31e1c7b1bbd21.jpg?size=150",
@@ -550,7 +550,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24", "خوش برخورد", "کمترین معطلی"],
   },
   {
-    id: "460d3fe7-3cc5-46c8-95ff-cbb325206100",
+    id: "460d3fe7",
     name: "عبدالمهدی ساروی",
     image:
       "/getImage/p24/search-men/c44e9eebdfe559a8e684db8bf1292fc4.png?size=150",
@@ -567,7 +567,7 @@ export const doctors: DoctorModel[] = [
     badges: ["کمترین معطلی"],
   },
   {
-    id: "1808240e-2129-429e-b9a8-5a1fc73650b5",
+    id: "1808240e",
     name: "میلاد محتشمی",
     image:
       "/getImage/p24/search-men/ec5434bdbd79abc79ee8ff3dd7b50ecb.jpg?size=150",
@@ -583,7 +583,7 @@ export const doctors: DoctorModel[] = [
     badges: [],
   },
   {
-    id: "973f9a26-d585-49da-b483-efa831b6b9d7",
+    id: "973f9a26",
     name: "سمانه جوکار",
     image:
       "/getImage/p24/search-women/ba2f143ad799cc30086fc285df3c46ba.jpg?size=150",
@@ -599,7 +599,7 @@ export const doctors: DoctorModel[] = [
     badges: [],
   },
   {
-    id: "973f9d65-b12b-43e9-bb96-9f437899b331",
+    id: "973f9d65",
     name: "سیدامیر حسین معزی",
     image:
       "/getImage/p24/search-men/299f366d6f48c850917fe4794237e8b3.jpg?size=150",
@@ -616,7 +616,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24", "کمترین معطلی"],
   },
   {
-    id: "9c388fd6-9b69-46e3-8717-134476e8ca37",
+    id: "9c388fd6",
     name: "فریبا دهقانی زاده",
     image:
       "/getImage/p24/search-men/9a554b8c376b2da81dc09cc70f12a3e4.jpg?size=150",
@@ -633,7 +633,7 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24"],
   },
   {
-    id: "9d483aa2-46fe-44cf-a476-f41a08167b8b",
+    id: "9d483aa2",
     name: "شقایق محمودی برمسی",
     image:
       "/getImage/p24/search-men/c6f26f1316091036d5980970b0a842da.jpg?size=150",
@@ -650,7 +650,7 @@ export const doctors: DoctorModel[] = [
     badges: [],
   },
   {
-    id: "9857a7c2-6809-4f3f-bf32-c01a04e1c16f",
+    id: "9857a7c2",
     name: "لیلا محمودی",
     image:
       "/getImage/p24/search-women/46730212d57581d037a398a2c921608d.jpg?size=150",
