@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { DoctorModel } from "@/models/doctor.models";
+import { DoctorModel } from "@/models/doctor.model";
 import {
   createContext,
   PropsWithChildren,
@@ -71,5 +71,5 @@ function doesInclude(item: string, query?: string): boolean {
   if (!query) {
     return true;
   }
-  return item.toLowerCase().includes(query.toLowerCase( ));
+  return item.toLowerCase().includes(query.toLowerCase());
 }

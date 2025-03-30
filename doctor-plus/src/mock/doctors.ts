@@ -1,4 +1,4 @@
-import { DoctorModel } from "@/models/doctor.models";
+import { DoctorModel } from "@/models/doctor.model";
 
 export const doctors: DoctorModel[] = [
   {
