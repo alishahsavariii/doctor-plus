@@ -19,19 +19,19 @@
   --color-text-400: var(--color-gray-10);
   --color-text-700: var(--color-gray-40);
 
-  --color-primary: hsl(200deg 90% 46%);
+  --color-primary: hsl(200, 94%, 25%);
   --color-primary-fade: hsl(200deg 90% 96%);
   --color-primary-lighter: hsl(200deg 90% 50%);
   --color-primary-darker: hsl(200deg 90% 42%);
   --color-primary-opposite: var(--color-gray-99);
 
-  --color-danger: hsl(10deg 80% 48%);
+  --color-danger: hsl(10, 90%, 38%);
   --color-danger-fade: hsl(10deg 80% 96%);
   --color-danger-lighter: hsl(10deg 80% 52%);
   --color-danger-darker: hsl(10deg 80% 44%);
   --color-danger-opposite: var(--color-gray-99);
 
-  --color-online-indicator: hsl(160deg 90% 65%);
+  --color-online-indicator: hsl(160, 62%, 52%);
   --color-online-indicator-fade: hsl(160deg 90% 85%);
 
   --color-star: hsl(50deg 100% 50%);
@@ -103,6 +103,15 @@ a {
   text-decoration: none;
 }
 
+.theme-light {  
+  --bg-primary: white;  
+  --text-primary: black;  
+}  
+
+.theme-dark {  
+  --bg-primary: #121212;  
+  --text-primary: white;  
+}  
 body {
   background-color: var(--color-surface-400);
   color: var(--color-text-400);

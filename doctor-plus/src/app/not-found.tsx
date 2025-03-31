@@ -11,7 +11,7 @@ const NotFound: React.FC = () => {
     <div className={styles["not-found"]}>
       <div className={styles.writings}>
         <div className={styles["status-code"]}>404</div>
-        <h1>صغحه موردنظر پیدا نشد!</h1>
+        <h1>صفحه موردنظر پیدا نشد!</h1>
         <p>
           با عرض پوزش، لطفاً از طریق کادر جستجو، پزشک یا مرکز درمانی مورد نظر
           خود را جستجو کنید.
