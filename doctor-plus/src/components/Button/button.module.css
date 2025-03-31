@@ -95,6 +95,11 @@
     padding: 1rem 2rem;
   }
 
+  &.small {
+    padding: 0.2rem;
+    padding-inline: 0.3rem;
+  }
+
   &.inline {
     padding: 0.2rem 0.5rem;
 

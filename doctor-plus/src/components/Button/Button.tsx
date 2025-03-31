@@ -10,7 +10,7 @@ import styles from "./button.module.css";
 
 export type ButtonVariant = "default" | "primary" | "danger";
 export type ButtonShape = "inherit" | "solid" | "outlined";
-export type ButtonSize = "medium" | "large";
+export type ButtonSize = "small" | "medium" | "large";
 export type ButtonPosition = "default" | "inline";
 
 type CommonProps = {
@@ -41,7 +41,7 @@ export function ButtonComponent({
         styles[shape],
         styles[size],
         styles[position],
-        className,
+        className
       )}
       {...otherProps}
     >
@@ -69,7 +69,7 @@ export function ButtonLinkComponent({
         styles[shape],
         styles[size],
         styles[position],
-        className,
+        className
       )}
       {...otherProps}
     >
