@@ -1,10 +1,9 @@
 "use client";
 
-import { ReactElement, FormEvent, useRef } from "react";
+import { ReactElement, useRef } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 import signUpImage from "@/assets/images/sign-up.webp"
 import CardComponent from "@/components/card/card.component";
@@ -23,7 +22,6 @@ import MingcuteMailLine from "@/components/icons/MingcuteMailLine";
 import { ButtonComponent } from "@/components/Button/Button";
 
 export default function SignUpFormComponent(): ReactElement {
-  const router = useRouter();
 
   const formRef = useRef<HTMLFormElement>(null);
 
