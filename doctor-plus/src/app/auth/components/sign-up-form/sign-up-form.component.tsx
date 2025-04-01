@@ -1,60 +1,58 @@
 "use client";
 
-import { ReactElement, useRef } from "react";
-
+import { FormEvent, ReactElement, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import signUpImage from "@/assets/images/sign-up.webp"
+import signUpImage from "@/assets/images/sign-up.webp";
 import CardComponent from "@/components/card/card.component";
 import NormalInputComponent from "@/components/normal-input/normal-input.component";
 import PasswordInputComponent from "@/components/password-input/password-input.component";
+import { SignUpDto } from "@/dto/auth.dto";
+import { ButtonComponent } from "@/components/Button/Button";
+import { fetchWithToast } from "@/utils/fetch-utils";
+import { useRouter } from "next/router";
 
-// import { SignUpDto } from "@/dto/auth.dto";
-
-
-// import { fetchWithToast } from "@/utils/fetch-utils";
-
-import styles from "@/app/auth/styles/auth-form.module.css";
 import MingcuteIncognitoModeLine from "@/components/icons/MingcuteIncognitoModeLine";
 import MingcuteUser3Line from "@/components/icons/MingcuteUser3Line";
 import MingcuteMailLine from "@/components/icons/MingcuteMailLine";
-import { ButtonComponent } from "@/components/Button/Button";
+
+import styles from "@/app/auth/styles/auth-form.module.css";
 
 export default function SignUpFormComponent(): ReactElement {
-
+  const router = useRouter();
   const formRef = useRef<HTMLFormElement>(null);
 
-  // const formSubmitHandler = async (
-  //   e: FormEvent<HTMLFormElement>,
-  // ): Promise<void> => {
-  //   e.preventDefault();
+  const formSubmitHandler = async (
+    e: FormEvent<HTMLFormElement>
+  ): Promise<void> => {
+    e.preventDefault();
 
-  //   const formData = new FormData(e.currentTarget);
+    const formData = new FormData(e.currentTarget);
 
-  //   const dto: SignUpDto = {
-  //     name: formData.get("name") as string,
-  //     username: formData.get("username") as string,
-  //     email: formData.get("email") as string,
-  //     password: formData.get("password") as string,
-  //   };
+    const dto: SignUpDto = {
+      name: formData.get("name") as string,
+      username: formData.get("username") as string,
+      email: formData.get("email") as string,
+      password: formData.get("password") as string,
+    };
 
-  //   const result = await fetchWithToast<null>(
-  //     "/api/auth/sign-up",
-  //     {
-  //       method: "POST",
-  //       body: JSON.stringify(dto),
-  //     },
-  //     "ثبت‌نام با موفقیت انجام شد.",
-  //   );
+    const result = await fetchWithToast<null>(
+      "/api/auth/sign-up",
+      {
+        method: "POST",
+        body: JSON.stringify(dto),
+      },
+      "ثبت‌نام با موفقیت انجام شد."
+    );
 
-  //   if (result.error) {
-  //     return;
-  //   }
+    if (result.error) {
+      return;
+    }
 
-  //   formRef.current?.reset();
-  //   router.push("/dashboard");
-  // };
+    formRef.current?.reset();
+    router.push("/");
+  };
 
   return (
     <div className={styles["auth-form"]}>
@@ -62,7 +60,7 @@ export default function SignUpFormComponent(): ReactElement {
         <div className={styles["card-content"]}>
           <div className={styles.writings}>
             <h1>ثبت‌نام!</h1>
-            <form ref={formRef}>
+            <form ref={formRef} onSubmit={formSubmitHandler}>
               <NormalInputComponent
                 label="نام و نام خانوادگی"
                 type="text"

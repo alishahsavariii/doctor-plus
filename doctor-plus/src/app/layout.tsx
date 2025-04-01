@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
+
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import ToasterComponent from "@/components/toaster/toaster.component";
 
 import "./globals.css";
 import "@/styles/typography.css";
@@ -28,6 +30,7 @@ export default function RootLayout({
           نوبت دهی پزشکی، سامانه نوبت دهی اینترنتی بیمارستان و پزشکان
         </p>
         <Footer />
+        <ToasterComponent />
       </body>
     </html>
   );
