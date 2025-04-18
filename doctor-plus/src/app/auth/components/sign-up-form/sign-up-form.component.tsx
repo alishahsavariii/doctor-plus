@@ -3,6 +3,7 @@
 import { FormEvent, ReactElement, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 import signUpImage from "@/assets/images/sign-up.webp";
 import CardComponent from "@/components/card/card.component";
@@ -11,7 +12,6 @@ import PasswordInputComponent from "@/components/password-input/password-input.c
 import { SignUpDto } from "@/dto/auth.dto";
 import { ButtonComponent } from "@/components/Button/Button";
 import { fetchWithToast } from "@/utils/fetch-utils";
-import { useRouter } from "next/router";
 
 import MingcuteIncognitoModeLine from "@/components/icons/MingcuteIncognitoModeLine";
 import MingcuteUser3Line from "@/components/icons/MingcuteUser3Line";

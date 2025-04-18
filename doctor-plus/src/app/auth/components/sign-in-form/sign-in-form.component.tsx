@@ -1,54 +1,56 @@
 "use client";
 
-import { ReactElement, useRef } from "react";
+import { FormEvent, ReactElement, useRef } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
-import signInImage from "@/assets/images/sign-in.webp"
+import { useRouter } from "next/navigation";
 
+import signInImage from "@/assets/images/sign-in.webp";
 import { ButtonComponent } from "@/components/Button/Button";
 import CardComponent from "@/components/card/card.component";
 import NormalInputComponent from "@/components/normal-input/normal-input.component";
 import PasswordInputComponent from "@/components/password-input/password-input.component";
-import MingcuteUser3Line from "@/components/icons/MingcuteUser3Line";
 
-// import { SignInDto } from "@/dto/auth.dto";
-// import { fetchWithToast } from "@/utils/fetch-utils";
+import { SignInDto } from "@/dto/auth.dto";
+import { fetchWithToast } from "@/utils/fetch-utils";
+
+import MingcuteUser3Line from "@/components/icons/MingcuteUser3Line";
 
 import styles from "@/app/auth/styles/auth-form.module.css";
 
 export default function SignInFormComponent(): ReactElement {
-
+  const router = useRouter();
   const formRef = useRef<HTMLFormElement>(null);
 
-  // const formSubmitHandler = async (
-  //   e: FormEvent<HTMLFormElement>,
-  // ): Promise<void> => {
-  //   e.preventDefault();
+  const formSubmitHandler = async (
+    e: FormEvent<HTMLFormElement>
+  ): Promise<void> => {
+    e.preventDefault();
 
-  //   const formData = new FormData(e.currentTarget);
+    const formData = new FormData(e.currentTarget);
 
-  //   const dto: SignInDto = {
-  //     username: formData.get("username") as string,
-  //     password: formData.get("password") as string,
-  //   };
+    const dto: SignInDto = {
+      username: formData.get("username") as string,
+      password: formData.get("password") as string,
+    };
 
-  //   const result = await fetchWithToast<null>(
-  //     "/api/auth/sign-in",
-  //     {
-  //       method: "POST",
-  //       body: JSON.stringify(dto),
-  //     },
-  //     "خوش آمدید!",
-  //   );
+    const result = await fetchWithToast<null>(
+      "/api/auth/sign-in",
+      {
+        method: "POST",
+        body: JSON.stringify(dto),
+      },
+      `${dto.username} خوش آمدی`
+    );
 
-  //   if (result.error) {
-  //     return;
-  //   }
+    if (result.error) {
+      return;
+    }
 
-  //   formRef.current?.reset();
-  //   router.push("/dashboard");
-  // };
+    formRef.current?.reset();
+    router.push("/dashboard");
+  };
 
   return (
     <div className={styles["auth-form"]}>
@@ -56,7 +58,7 @@ export default function SignInFormComponent(): ReactElement {
         <div className={styles["card-content"]}>
           <div className={styles.writings}>
             <h1>ورود!</h1>
-            <form ref={formRef}>
+            <form ref={formRef} onSubmit={formSubmitHandler}>
               <NormalInputComponent
                 label="نام کاربری"
                 type="text"

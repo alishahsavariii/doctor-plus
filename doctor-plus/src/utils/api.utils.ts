@@ -1,7 +1,13 @@
 import { ApiResponseType } from "@/types/api-response.type";
-import { NextResponse } from "next/server";
+import { cookies } from "next/headers";
+import { NextRequest, NextResponse } from "next/server";
+
+import * as jose from "jose";
 
 type parseBodyResult<T> = [error: null, data: T] | [error: string, data: null];
+
+const alg = "HS256";
+const secret = new TextEncoder().encode(process.env.TOKEN_SECRET);
 
 export async function parseBody<T>(
   request: Request
@@ -35,5 +41,43 @@ export async function wrapWithTryCatch<T>(
       { error: "خطای غیرمنتظره رخ داد." },
       { status: 500 }
     );
+  }
+}
+
+export async function setAuthCookie(): Promise<void> {
+  const cookieStore = cookies();
+
+  const token = await new jose.SignJWT()
+    .setProtectedHeader({ alg })
+    .setIssuedAt()
+    .setExpirationTime("3d")
+    .sign(secret);
+
+  cookieStore.set(process.env.TOKEN_KEY!, token, {
+    secure: true,
+    httpOnly: true,
+    sameSite: "none",
+    maxAge: 3 * 24 * 3600,
+  });
+}
+
+export async function removeAuthCookie(): Promise<void> {
+  const cookieStore = cookies();
+  cookieStore.delete(process.env.TOKEN_KEY!);
+}
+
+export async function isSignedIn(request: NextRequest): Promise<boolean> {
+  const token = request.cookies.get(process.env.TOKEN_KEY!)?.value;
+
+  if (!token) {
+    return false;
+  }
+
+  try {
+    await jose.jwtVerify(token, secret);
+    return true;
+  } catch (error) {
+    console.log(error);
+    return false;
   }
 }
