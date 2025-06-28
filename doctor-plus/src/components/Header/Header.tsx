@@ -7,6 +7,7 @@ import clsx from "clsx";
 
 import styles from "./header.module.css";
 import { ButtonLinkComponent } from "../Button/Button";
+import { ThemeToggle } from "../themeToggle/theme.toggle.component"; // Added import
 
 type PAGE_INFO = {
   href: string;
@@ -46,6 +47,7 @@ const Header: React.FC = () => {
       >
         ورود | ثبت‌نام
       </ButtonLinkComponent>
+      <ThemeToggle /> {/* Added ThemeToggle component */}
     </header>
   );
 };

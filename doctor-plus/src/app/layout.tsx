@@ -4,6 +4,7 @@ import { Vazirmatn } from "next/font/google";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import ToasterComponent from "@/components/toaster/toaster.component";
+import { ThemeProvider } from "@/app/provider/theme-context.provider"; // Added import
 
 import "./globals.css";
 import "@/styles/typography.css";
@@ -24,13 +25,15 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl" className={vazirmatn.className}>
       <body>
-        <Header />
-        <main>{children}</main>
-        <p className="tagline">
-          نوبت دهی پزشکی، سامانه نوبت دهی اینترنتی بیمارستان و پزشکان
-        </p>
-        <Footer />
-        <ToasterComponent />
+        <ThemeProvider> {/* Added ThemeProvider */}
+          <Header />
+          <main>{children}</main>
+          <p className="tagline">
+            نوبت دهی پزشکی، سامانه نوبت دهی اینترنتی بیمارستان و پزشکان
+          </p>
+          <Footer />
+          <ToasterComponent />
+        </ThemeProvider> {/* Added ThemeProvider */}
       </body>
     </html>
   );

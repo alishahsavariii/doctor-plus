@@ -2,7 +2,7 @@
   --color-gray-99: hsl(200deg 10% 99%);
   --color-gray-97: hsl(200deg 10% 97%);
   --color-gray-93: hsl(200deg 10% 93%);
-  --color-gray-90: hsl(200deg 10% 93%);
+  --color-gray-90: hsl(200deg 10% 90%); /* Corrected typo */
   --color-gray-80: hsl(200deg 10% 80%);
   --color-gray-70: hsl(200deg 10% 70%);
   --color-gray-40: hsl(200deg 10% 40%);
@@ -12,32 +12,71 @@
   --color-gray-12: hsl(200deg 10% 12%);
   --color-gray-10: hsl(200deg 10% 10%);
 
-  --color-surface-300: var(--color-gray-93);
-  --color-surface-400: var(--color-gray-97);
-  --color-surface-700: var(--color-gray-99);
+  /* Light Theme Variables */
+  --color-background-light: var(--color-gray-97);
+  --color-surface-light: var(--color-gray-99);
+  --color-surface-secondary-light: var(--color-gray-93);
+  --color-text-primary-light: var(--color-gray-10);
+  --color-text-secondary-light: var(--color-gray-40);
+  --color-border-light: var(--color-gray-80);
+  --color-primary-light: hsl(200, 94%, 25%);
+  --color-primary-fade-light: hsl(200deg 90% 96%);
+  --color-primary-lighter-light: hsl(200deg 90% 50%);
+  --color-primary-darker-light: hsl(200deg 90% 42%);
+  --color-primary-opposite-light: var(--color-gray-99);
+  --color-danger-light: hsl(10, 90%, 38%);
+  --color-danger-fade-light: hsl(10deg 80% 96%);
+  --color-danger-lighter-light: hsl(10deg 80% 52%);
+  --color-danger-darker-light: hsl(10deg 80% 44%);
+  --color-danger-opposite-light: var(--color-gray-99);
+  --color-online-indicator-light: hsl(160, 62%, 52%);
+  --color-online-indicator-fade-light: hsl(160deg 90% 85%);
+  --color-star-light: hsl(50deg 100% 50%);
 
-  --color-text-400: var(--color-gray-10);
-  --color-text-700: var(--color-gray-40);
 
-  --color-primary: hsl(200, 94%, 25%);
-  --color-primary-fade: hsl(200deg 90% 96%);
-  --color-primary-lighter: hsl(200deg 90% 50%);
-  --color-primary-darker: hsl(200deg 90% 42%);
-  --color-primary-opposite: var(--color-gray-99);
+  /* Dark Theme Variables */
+  --color-background-dark: var(--color-gray-12);
+  --color-surface-dark: var(--color-gray-16);
+  --color-surface-secondary-dark: var(--color-gray-20);
+  --color-text-primary-dark: var(--color-gray-97);
+  --color-text-secondary-dark: var(--color-gray-70);
+  --color-border-dark: var(--color-gray-30);
+  --color-primary-dark: hsl(200, 94%, 55%); /* Adjusted for dark mode */
+  --color-primary-fade-dark: hsl(200deg 80% 20%); /* Adjusted for dark mode */
+  --color-primary-lighter-dark: hsl(200deg 90% 70%); /* Adjusted for dark mode */
+  --color-primary-darker-dark: hsl(200deg 90% 32%); /* Adjusted for dark mode */
+  --color-primary-opposite-dark: var(--color-gray-10);
+  --color-danger-dark: hsl(10, 90%, 58%); /* Adjusted for dark mode */
+  --color-danger-fade-dark: hsl(10deg 80% 20%); /* Adjusted for dark mode */
+  --color-danger-lighter-dark: hsl(10deg 80% 72%); /* Adjusted for dark mode */
+  --color-danger-darker-dark: hsl(10deg 80% 34%); /* Adjusted for dark mode */
+  --color-danger-opposite-dark: var(--color-gray-97);
+  --color-online-indicator-dark: hsl(160, 62%, 42%); /* Adjusted for dark mode */
+  --color-online-indicator-fade-dark: hsl(160deg 90% 25%); /* Adjusted for dark mode */
+  --color-star-dark: hsl(50deg 100% 60%); /* Adjusted for dark mode */
 
-  --color-danger: hsl(10, 90%, 38%);
-  --color-danger-fade: hsl(10deg 80% 96%);
-  --color-danger-lighter: hsl(10deg 80% 52%);
-  --color-danger-darker: hsl(10deg 80% 44%);
-  --color-danger-opposite: var(--color-gray-99);
+  /* Default to light theme variables */
+  --color-background: var(--color-background-light);
+  --color-surface: var(--color-surface-light);
+  --color-surface-secondary: var(--color-surface-secondary-light);
+  --color-text-primary: var(--color-text-primary-light);
+  --color-text-secondary: var(--color-text-secondary-light);
+  --color-border: var(--color-border-light);
+  --color-primary: var(--color-primary-light);
+  --color-primary-fade: var(--color-primary-fade-light);
+  --color-primary-lighter: var(--color-primary-lighter-light);
+  --color-primary-darker: var(--color-primary-darker-light);
+  --color-primary-opposite: var(--color-primary-opposite-light);
+  --color-danger: var(--color-danger-light);
+  --color-danger-fade: var(--color-danger-fade-light);
+  --color-danger-lighter: var(--color-danger-lighter-light);
+  --color-danger-darker: var(--color-danger-darker-light);
+  --color-danger-opposite: var(--color-danger-opposite-light);
+  --color-online-indicator: var(--color-online-indicator-light);
+  --color-online-indicator-fade: var(--color-online-indicator-fade-light);
+  --color-star: var(--color-star-light);
 
-  --color-online-indicator: hsl(160, 62%, 52%);
-  --color-online-indicator-fade: hsl(160deg 90% 85%);
-
-  --color-star: hsl(50deg 100% 50%);
-
-  --color-border: var(--color-gray-80);
-
+  /* Shadows - these can often remain the same for light/dark, or be subtly adjusted if needed */
   --shadow-300: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-400: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-500: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -67,7 +106,7 @@
 }
 
 html {
-  color-scheme: light;
+  color-scheme: light; /* Will be updated by theme */
   accent-color: var(--color-primary);
   caret-color: var(--color-primary);
 
@@ -87,6 +126,25 @@ output,
 option,
 optgroup {
   font: inherit;
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius); /* Added border-radius */
+  padding: 0.5em 0.75em; /* Added padding */
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-primary-opposite);
+  cursor: pointer; /* Added cursor pointer */
+}
+
+button:hover {
+  background-color: var(--color-primary-lighter);
+}
+
+button:active {
+  background-color: var(--color-primary-darker);
 }
 
 ul {
@@ -94,27 +152,67 @@ ul {
 }
 
 p {
-  color: var(--color-text-700);
+  color: var(--color-text-secondary);
 }
 
 a {
-  color: inherit;
-
+  color: var(--color-primary);
   text-decoration: none;
 }
 
-.theme-light {  
-  --bg-primary: white;  
-  --text-primary: black;  
-}  
+a:hover {
+  color: var(--color-primary-lighter);
+}
 
-.theme-dark {  
-  --bg-primary: #121212;  
-  --text-primary: white;  
-}  
+.theme-light {
+  color-scheme: light;
+  --color-background: var(--color-background-light);
+  --color-surface: var(--color-surface-light);
+  --color-surface-secondary: var(--color-surface-secondary-light);
+  --color-text-primary: var(--color-text-primary-light);
+  --color-text-secondary: var(--color-text-secondary-light);
+  --color-border: var(--color-border-light);
+  --color-primary: var(--color-primary-light);
+  --color-primary-fade: var(--color-primary-fade-light);
+  --color-primary-lighter: var(--color-primary-lighter-light);
+  --color-primary-darker: var(--color-primary-darker-light);
+  --color-primary-opposite: var(--color-primary-opposite-light);
+  --color-danger: var(--color-danger-light);
+  --color-danger-fade: var(--color-danger-fade-light);
+  --color-danger-lighter: var(--color-danger-lighter-light);
+  --color-danger-darker: var(--color-danger-darker-light);
+  --color-danger-opposite: var(--color-danger-opposite-light);
+  --color-online-indicator: var(--color-online-indicator-light);
+  --color-online-indicator-fade: var(--color-online-indicator-fade-light);
+  --color-star: var(--color-star-light);
+}
+
+.theme-dark {
+  color-scheme: dark;
+  --color-background: var(--color-background-dark);
+  --color-surface: var(--color-surface-dark);
+  --color-surface-secondary: var(--color-surface-secondary-dark);
+  --color-text-primary: var(--color-text-primary-dark);
+  --color-text-secondary: var(--color-text-secondary-dark);
+  --color-border: var(--color-border-dark);
+  --color-primary: var(--color-primary-dark);
+  --color-primary-fade: var(--color-primary-fade-dark);
+  --color-primary-lighter: var(--color-primary-lighter-dark);
+  --color-primary-darker: var(--color-primary-darker-dark);
+  --color-primary-opposite: var(--color-primary-opposite-dark);
+  --color-danger: var(--color-danger-dark);
+  --color-danger-fade: var(--color-danger-fade-dark);
+  --color-danger-lighter: var(--color-danger-lighter-dark);
+  --color-danger-darker: var(--color-danger-darker-dark);
+  --color-danger-opposite: var(--color-danger-opposite-dark);
+  --color-online-indicator: var(--color-online-indicator-dark);
+  --color-online-indicator-fade: var(--color-online-indicator-fade-dark);
+  --color-star: var(--color-star-dark);
+}
+
 body {
-  background-color: var(--color-surface-400);
-  color: var(--color-text-400);
+  background-color: var(--color-background); /* Use new theme variable */
+  color: var(--color-text-primary);       /* Use new theme variable */
 
   display: grid;
   grid-template-rows: auto 1fr auto auto;
@@ -122,17 +220,16 @@ body {
   min-block-size: 100vh;
   min-block-size: 100dvh;
 
-  font-size: var(--fz-400);
+  font-size: var(--fz-400); /* Assuming --fz-400 is defined elsewhere, e.g. typography.css */
 
   > * {
     padding-inline: var(--full-width-padding-inline);
   }
 
   .tagline {
-    background-color: var(--color-surface-300);
-
+    background-color: var(--color-surface-secondary); /* Use new theme variable */
+    color: var(--color-text-secondary);            /* Use new theme variable */
     padding-block: 1rem;
-
     text-align: center;
   }
 }
