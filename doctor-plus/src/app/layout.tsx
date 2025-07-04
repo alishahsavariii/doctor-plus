@@ -15,6 +15,7 @@ const vazirmatn = Vazirmatn({
 export const metadata: Metadata = {
   title: "دکتر پلاس",
   description: "سامانه جستجو آنلاین دکتر و رزرو نوبت",
+  manifest: "/manifest.json",
 };
 export default function RootLayout({
   children,
@@ -23,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl" className={vazirmatn.className}>
+      <head>
+        <meta name="theme-color" content="#FFFFFF" />
+      </head>
       <body>
         <Header />
         <main>{children}</main>
