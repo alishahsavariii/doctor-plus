@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- full-bleed background -->
+  <rect width="512" height="512" fill="#0d6efd"/>
+  <!-- safe area circle -->
+  <circle cx="256" cy="256" r="192" fill="#0d6efd"/>
+  <!-- content inside safe area: pin + stethoscope -->
+  <g transform="translate(0,10)">
+    <path d="M256 112c-52.9 0-96 43.1-96 96 0 66 96 176 96 176s96-110 96-176c0-52.9-43.1-96-96-96z" fill="#fff"/>
+    <circle cx="256" cy="208" r="40" fill="#0d6efd"/>
+    <path d="M304 248c0 28-22 50-48 50s-48-22-48-50" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="352" cy="280" r="22" fill="#fff"/>
+  </g>
+</svg>

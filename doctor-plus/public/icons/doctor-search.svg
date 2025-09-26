@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect rx="64" width="512" height="512" fill="#0d6efd"/>
+  <g transform="translate(64,64) scale(0.75)">
+    <!-- location pin -->
+    <path d="M192 0C120.6 0 64 56.6 64 128c0 88 128 240 128 240s128-152 128-240C448 56.6 391.4 0 320 0z" fill="#fff"/>
+    <!-- inner circle -->
+    <circle cx="192" cy="128" r="48" fill="#0d6efd"/>
+    <!-- stethoscope tube -->
+    <path d="M256 208c0 36.6-29.4 66-66 66s-66-29.4-66-66" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- chest piece -->
+    <circle cx="320" cy="240" r="28" fill="#fff"/>
+    <rect x="304" y="228" width="32" height="24" rx="12" fill="#fff"/>
+    <!-- tubing connecting to pin center -->
+    <path d="M286 216c12 8 20 21 20 36" stroke="#fff" stroke-width="12" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

@@ -1,22 +1,33 @@
 {
-  "name": "Doctor Plus",
-  "short_name": "Doctor+",
+  "name": "دکتر پلاس",
+  "short_name": "Doc+",
+  "description": "سامانه جستجو آنلاین دکتر و رزرو نوبت",
+  "lang": "fa",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
   "icons": [
     {
-      "src": "/icons/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/icons/android-chrome-512x512.png",
+      "src": "/icons/doctor-search-glyph.svg",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
     }
   ],
-  "theme_color": "#FFFFFF",
-  "background_color": "#FFFFFF",
-  "start_url": "/",
-  "display": "standalone",
-  "orientation": "portrait"
+  "screenshots": [
+    {
+      "src": "/screenshots/screen-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/screen-portrait.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
 }
